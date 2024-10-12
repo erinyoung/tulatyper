@@ -13,6 +13,8 @@ Prior methods have identified hypervariable regions (https://journals.plos.org/p
 
 The logic behind this method uses genes identified [All the Bacteria](https://www.biorxiv.org/content/10.1101/2024.03.08.584059v1) after prokka annotation and panaroo alignment. Essentially, there are genes present or absent for each subtype.
 
+![tulatyper workflow steps](https://github.com/erinyoung/tulatyper/blob/main/tulatyper_flow.drawio.png)
+
 ## installation
 
 Get the dependencies camlhmp and blast. The easiest way is via conda.
