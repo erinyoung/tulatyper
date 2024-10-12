@@ -27,7 +27,6 @@ targets:
   - "group_1013"
   - "group_317"
   - "group_1065"
-  - "group_994"
   - "group_958"
   - "lysC"
   - "btrK"
@@ -40,7 +39,7 @@ aliases:
   - name: "b2_alias"           # name of the alias
     targets: ["group_1008", "group_1009", "group_1012", "group_1013", "group_317"]  # list of targets that are part of the alias
   - name: "m3_alias"
-    targets: ["group_1065", "group_994", "group_958"]
+    targets: ["group_1065", "group_958"]
   - name: "n1_alias"
     targets: ["lysC", "btrK", "hepA", "group_58", "group_23"]
 
