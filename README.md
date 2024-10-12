@@ -3,6 +3,8 @@
 # tulatyper
 Subtyping of Francisella tularensis subtypes
 
+![tulatyper logo with image of rabbit head as "l" and jumping rabbit as cross of second "t"](https://github.com/erinyoung/tulatyper/blob/main/tulalogo.png)
+
 ## background
 
 Distinguishing the subspecies of Francisella tularensis is crucial for understanding the pathogen's epidemiology, virulence, and potential public health impact. The four recognized subspecies are tularensis (Type A), holarctica (Type B), mediasiatica, and novicida. The subspecies differ significantly in their geographic distribution, pathogenicity, and host reservoirs. Identifying the subspecies can inform epidemiological tracking and help implement targeted measures to control outbreaks, especially in regions where different subspecies are endemic.
