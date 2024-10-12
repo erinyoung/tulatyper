@@ -1,0 +1,9 @@
+fasta,type,info
+tests/GCF_000008985.1_ASM898v1_genomic.fna,F. tularensis subsp. tularensis subtype A,SCHU-S4: NC_006570: GCF_000008985.1: SAMEA3138185
+tests/GCF_000009245.1_ASM924v1_genomic.fna,F. tularensis subsp. holarctica (type B),LVS: NC_007880: GCF_000009245.1: SAMEA3138197
+tests/GCF_000009325.1_ASM932v1_genomic.fna,F. tularensis subsp. tularensis subtype A,FSC198: NC_008245: GCF_000009325.1: SAMEA3138200
+tests/GCF_000014605.1_ASM1460v1_genomic.fna,F. tularensis subsp. holarctica (type B),OSU18: NC_008369: GCF_000014605.1: SAMN02641482
+tests/GCF_000014645.1_ASM1464v1_genomic.fna,F. tularensis subsp. novicida,U112: NC_008601: GCF_000014645.1: SAMN02604254
+tests/GCF_000016105.1_ASM1610v1_genomic.fna,F. tularensis subsp. tularensis subtype A,WY96-3418: NC_009257: GCF_000016105.1: SAMN02603036
+tests/GCF_000017785.1_ASM1778v1_genomic.fna,F. tularensis subsp. holarctica (type B),FTNF002-00: NC_009749 : GCF_000017785.1 : SAMN02603037
+tests/GCF_004213485.1_ASM421348v1_genomic.fna,F. tularensis subsp. mediasiatica,SCPM-O-B-7176(A-678):  : GCF_004213485.1: SAMN10924159

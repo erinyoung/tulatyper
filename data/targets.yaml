@@ -19,6 +19,7 @@ engine:
 
 # targets provides a list of sequence targets (primers, genes, proteins, etc...)
 targets:
+  - "dnaE"
   - "group_965"
   - "group_1008"
   - "group_1009"
@@ -48,13 +49,23 @@ types:
   - name: "F. tularensis subsp. tularensis subtype A.I"          # name of the types
     targets:           # list of targets that are part of the types
       - "group_965"
+      - "dnaE"
     excludes:
+      - "b2_alias"
+      - "m3_alias"
+      - "n1_alias"
+  - name: "F. tularensis subsp. tularensis subtype A.II"          # name of the types
+    targets:           # list of targets that are part of the types
+      - "dnaE"
+    excludes:
+      - "group_965"
       - "b2_alias"
       - "m3_alias"
       - "n1_alias"
   - name: "F. tularensis subsp. holarctica (type B)"
     targets:
       - "b2_alias"
+      - "dnaE"
     excludes:          # list of targets that if present will exclude the type
       - "group_965"
       - "b2_alias"
@@ -63,6 +74,7 @@ types:
   - name: "F. tularensis subsp. mediasiatica"
     targets:
       - "m3_alias"
+      - "dnaE"
     excludes:          # list of targets that if present will exclude the type
       - "group_965"
       - "b2_alias"
@@ -70,6 +82,7 @@ types:
   - name: "F. tularensis subsp. novicida"
     targets:
       - "n1_alias"
+      - "dnaE"
     excludes:          # list of targets that if present will exclude the type
       - "group_965"
       - "b2_alias"
