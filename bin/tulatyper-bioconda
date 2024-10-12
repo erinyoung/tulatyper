@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+dir=$(dirname $0)
+
+CAML_YAML="${dir}/../share/tulatyper/targets.yaml" \
+CAML_TARGETS="${dir}/../share/tulatyper/targets.fasta" \
+    camlhmp-blast-targets \
+    "${@:1}"
