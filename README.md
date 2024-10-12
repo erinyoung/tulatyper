@@ -66,3 +66,5 @@ camlhmp F. tularensis subsp. mediasiatica all   False   CARKD~~~nnr     group_95
 sample  type    targets schema  schema_version  camlhmp_version params  comment
 camlhmp multiple        group_965,group_1008,group_1009,group_1012,CARKD~~~nnr  tulatyper_targets       0.1.24286       1.1.0   min-coverage=90;min-pident=90  Found matches for multiple types including: F. tularensis subsp. tularensis subtype A.I all, F. tularensis subsp. tularensis subtype A.II all, F. tularensis subsp. holarctica (type B) all
 ```
+
+Created as part of the ASM-NGS 2024 Hackathon with assistance from [@erinyoung](https://github.com/erinyoung), [@wboateng72](https://github.com/wboateng72), [@David-Mahoney](https://github.com/David-Mahoney), [@phillma2](https://github.com/phillma2), [@VishnuRaghuram94](https://github.com/VishnuRaghuram94), [@rpetit3](https://github.com/rpetit3)
