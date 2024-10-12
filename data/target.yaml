@@ -1,0 +1,149 @@
+%YAML 1.2
+---
+# metadata provides information about the schema
+metadata:
+  id: "sccmec_targets"                               # id of the schema
+  name: "SCCmec Typing (targets)"                    # name of the schema
+  description: "A schema for SCCmec typing using specific targets"  # description of the schema
+  version: "1.2.0"                                   # version of the schema
+  curators:                                          # A list of curators of the schema
+    - "Robert Petit"
+
+# engine provides information about the tool and parameters used
+engine:
+  type: "blast" # The type of engine to use
+  tool: blastn # The tool used to generate the data
+  params:
+    min_pident: 90    # The minimum percent identity for a hit
+    min_coverage: 80  # The minimum coverage for a hit
+
+# targets provides a list of sequence targets (primers, genes, proteins, etc...)
+targets:
+  - "ccrA1"
+  - "ccrA2"
+  - "ccrA3"
+  - "ccrA4"
+  - "ccrB1"
+  - "ccrB2"
+  - "ccrB3"
+  - "ccrB4"
+  - "ccrB6"
+  - "ccrC1"
+  - "ccrC2"
+  - "IS431"
+  - "IS431_1"
+  - "IS431_2"
+  - "IS1272"
+  - "IS12960D"
+  - "mecA"
+  - "mecI"
+  - "mecR1"
+  - "blaZ"
+
+# aliases allow for grouping of targets under a common name
+aliases:
+  - name: "ccr Type 1"           # name of the alias
+    targets: ["ccrA1", "ccrB1"]  # list of targets that are part of the alias
+  - name: "ccr Type 2"
+    targets: ["ccrA2", "ccrB2"]
+  - name: "ccr Type 3"
+    targets: ["ccrA3", "ccrB3"]
+  - name: "ccr Type 4"
+    targets: ["ccrA4", "ccrB4"]
+  - name: "ccr Type 5"
+    targets: ["ccrC1"]
+  - name: "ccr Type 7"
+    targets: ["ccrA1", "ccrB6"]
+  - name: "ccr Type 8"
+    targets: ["ccrA1", "ccrB3"]
+  - name: "ccr Type 9"
+    targets: ["ccrC2"]
+  - name: "mec Class A"
+    targets: ["IS431", "mecA", "mecR1", "mecI"]
+  - name: "mec Class B"
+    targets: ["IS431", "mecA", "mecR1", "IS1272"]
+  - name: "mec Class C"
+    targets: ["IS431_1", "mecA", "mecR1", "IS431_2"] # mec class C1 and C2 have same targets
+  - name: "mec Class E"
+    targets: ["blaZ", "mecA", "mecR1", "mecI"]
+
+# types includes the final typing designations based on targets and aliases 
+types:
+  - name: "I"          # name of the types
+    targets:           # list of targets that are part of the types
+      - "ccr Type 1"
+      - "mec Class B"
+  - name: "II"
+    targets:
+      - "ccr Type 2"
+      - "mec Class A"
+  - name: "III"
+    targets:
+      - "ccr Type 3"
+      - "mec Class A"
+  - name: "IV"
+    targets:
+      - "ccr Type 2"
+      - "mec Class B"
+  - name: "V"
+    targets:
+      - "ccr Type 5"
+      - "mec Class C"
+    excludes:          # list of targets that if present will exclude the type
+      - "ccr Type 3"
+      - "mecI"
+      - "IS12960D"
+  - name: "VI"
+    targets:
+      - "ccr Type 4"
+      - "mec Class B"
+  - name: "VII"
+    targets:
+      - "ccr Type 5"
+      - "mec Class C"
+      - "IS12960D"
+    excludes:
+      - "ccr Type 3"
+      - "mecI"
+  - name: "VIII"
+    targets:
+      - "ccr Type 4"
+      - "mec Class A"
+    excludes:
+      - "ccr Type 5"
+  - name: "IX"
+    targets:
+      - "ccr Type 1"
+      - "mec Class C"
+    excludes:
+      - "IS1272"
+  - name: "X"
+    targets:
+      - "ccr Type 7"
+      - "mec Class C"
+    excludes:
+      - "mecI"
+  - name: "XI"
+    targets:
+      - "ccr Type 8"
+      - "mec Class E"
+  - name: "XII"
+    targets:
+      - "ccr Type 9"
+      - "mec Class C"
+    excludes:
+      - "mecI"
+  - name: "XIII"
+    targets:
+      - "ccr Type 9"
+      - "mec Class A"
+  - name: "XIV"
+    targets:
+      - "ccr Type 5"
+      - "mec Class A"
+    excludes:
+      - "ccr Type 3"
+  - name: "XV"
+    targets:
+      - "ccr Type 7"
+      - "mec Class A"
