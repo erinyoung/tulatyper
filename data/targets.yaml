@@ -19,7 +19,6 @@ engine:
 
 # targets provides a list of sequence targets (primers, genes, proteins, etc...)
 targets:
-  - "dnaE"
   - "group_965"
   - "group_1008"
   - "group_1009"
@@ -27,19 +26,21 @@ targets:
   - "group_1013"
   - "group_317"
   - "group_1065"
+  - "group_994"
   - "group_958"
   - "lysC"
   - "btrK"
   - "hepA"
   - "group_58"
   - "group_23"
+  - "CARKD~~~nnr"
 
 # aliases allow for grouping of targets under a common name
 aliases:
   - name: "b2_alias"           # name of the alias
     targets: ["group_1008", "group_1009", "group_1012", "group_1013", "group_317"]  # list of targets that are part of the alias
   - name: "m3_alias"
-    targets: ["group_1065", "group_958"]
+    targets: ["group_1065", "group_994", "group_958"]
   - name: "n1_alias"
     targets: ["lysC", "btrK", "hepA", "group_58", "group_23"]
 
@@ -48,14 +49,14 @@ types:
   - name: "F. tularensis subsp. tularensis subtype A.I"          # name of the types
     targets:           # list of targets that are part of the types
       - "group_965"
-      - "dnaE"
+      - "CARKD~~~nnr"
     excludes:
       - "b2_alias"
       - "m3_alias"
       - "n1_alias"
-  - name: "F. tularensis subsp. tularensis subtype A.II"          # name of the types
-    targets:           # list of targets that are part of the types
-      - "dnaE"
+  - name: "F. tularensis subsp. tularensis subtype A.II"
+    targets:
+      - "CARKD~~~nnr"
     excludes:
       - "group_965"
       - "b2_alias"
@@ -64,16 +65,15 @@ types:
   - name: "F. tularensis subsp. holarctica (type B)"
     targets:
       - "b2_alias"
-      - "dnaE"
+      - "CARKD~~~nnr"
     excludes:          # list of targets that if present will exclude the type
       - "group_965"
-      - "b2_alias"
       - "m3_alias"
       - "n1_alias"
   - name: "F. tularensis subsp. mediasiatica"
     targets:
       - "m3_alias"
-      - "dnaE"
+      - "CARKD~~~nnr"
     excludes:          # list of targets that if present will exclude the type
       - "group_965"
       - "b2_alias"
@@ -81,8 +81,8 @@ types:
   - name: "F. tularensis subsp. novicida"
     targets:
       - "n1_alias"
-      - "dnaE"
     excludes:          # list of targets that if present will exclude the type
       - "group_965"
       - "b2_alias"
       - "m3_alias"
+      - "CARKD~~~nnr"
