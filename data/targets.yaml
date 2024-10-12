@@ -8,6 +8,7 @@ metadata:
   version: "0.1.24286"                              
   curators:                                      
     - "Erin Young"
+    - "Vishnu Raghuram"
 
 # engine provides information about the tool and parameters used
 engine:
